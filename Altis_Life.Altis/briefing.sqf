@@ -1,6 +1,7 @@
 waitUntil {!isServer && !isNull player && player isEqualTo player};
 if (player diarySubjectExists "controls") exitWith {};
 
+player createDiarySubject ["faloti", "Faloti"];
 player createDiarySubject ["credits","Credits"];
 player createDiarySubject ["changelog","Change Log"];
 player createDiarySubject ["serverrules","General Rules"];
@@ -23,6 +24,13 @@ TEXT HERE<br/><br/>
     ];
 */
 
+    player createDiaryRecord ["faloti",
+        [
+            "Discord",
+            "Discord Link: https://discord.gg/RYfmf5a"
+        ]
+    ];
+
     player createDiaryRecord ["credits",
         [
             "AsYetUntitled",
@@ -31,7 +39,7 @@ AsYetUntitled (formerly ArmaLife) is a GitHub project which aims to update and k
                 "
         ]
     ];
-
+/*
     player createDiaryRecord ["changelog",
         [
             "Altis Life Changelog",
@@ -61,12 +69,12 @@ Date: 19. January 2016<br/><br/>
                 "
         ]
     ];
-
+*/
     player createDiaryRecord ["changelog",
         [
             "Server Change Log",
                 "
-This section is meant for people doing their own edits to the mission, DO NOT REMOVE THE ABOVE.<br/><br/>
+                
                 "
         ]
     ];
